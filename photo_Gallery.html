@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<title>Photo Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-grey">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="dp.jpg" style="width:100%">
+  <a href="file:///C:/laragon/www/aizaproject/index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="file:///C:/laragon/www/aizaproject/photo_Gallery.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>GALLERY</p>
+  </a>
+  <a href="file:///C:/laragon/www/aizaproject/about_Us.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>ABOUT US</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+//for gallery
+<!DOCTYPE html>
+<html lang="en">
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+<body class="w3-light-grey">
+
+
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+  
+<div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+<h2><b>9 Qualities of a Good Employee</b></h2>
+
+    <h4><b>CLICK ON IMAGE FOR DETAILS</b></h4>
+    
+  <!-- Photo grid -->
+  <div class="w3-center w3-grayscale-min">
+    
+    
+    <div class="w3-center">
+      <img src="decisiveness.jpg" style="width:20%" onclick="onClick(this)" alt="Effective leaders are those who can make decisions quickly with the information they have. Effective decision-making comes with time and experience. As you become more familiar with your specific industry, you’ll be able to make decisions faster, even when you don’t have all of the necessary information. Decisiveness is seen as a valuable leadership skill because it can help move projects along faster and improve efficiency.
+
+Effective decisiveness requires research, evaluation, problem-solving and goal-setting, often with a quick turnaround. Decision-makers should be able to pull from their own experience with similar tasks, evaluate what might work best, make the decision and be confident in taking the responsibility for the result. Key skills related to being a strong leader through decisiveness include:
+
+Problem-solving
+Initiative
+Research
+Evaluation
+Expectation setting">
+      <img src="Integrity.jpg" style="width:20%" onclick="onClick(this)" alt="Integrity is often seen as just truthfulness or honesty but in many cases, it also means having and standing by a set of strong values. Integrity in the workplace often means being able to make ethical choices and helping the company maintain a positive image. All businesses seek to hire workers who have a strong sense of integrity.
+
+          Having integrity as a leader, not only encourages the most truthful and fair practice and outcome, but also, sends a strong and positive example to your team. A leader with integrity also shows the following skills:
+
+          Diplomatic
+          Ethical
+          Reliability
+          Professionalism
+          Confidentiality
+          Honest">
+    </div>
+
+    <div class="w3-center">
+      <img src="rb.jpg" style="width:20%" onclick="onClick(this)" alt="Relationship building (or team building).Leadership requires the ability to build and maintain a strong and collaborative team of individuals working toward the same goal. Team building requires other leadership strengths, like effective communication skills and conflict resolution. Relationship building is potentially one of the most important skills to a leadership role as it makes communication of tasks, responsibilities and goals more effective. Once you understand each other, you will benefit by being able to assess strengths, delegate tasks and complete your goals more seamlessly. A successful leader who is adept at relationship building will also have the following skills:
+
+Collaboration
+Management
+Interpersonal
+Social
+Communication
+Active listening
+Teamwork">
+    </div>
+
+    <div class="w3-center">
+      <img src="ps.jpg" style="width:20%" onclick="onClick(this)" alt="Good leaders are skilled at problem-solving issues that arise on the job. Effective problem solving often requires staying calm and identifying a step-by-step solution. Problem-solving skills can help leaders make quick decisions, resolve obstacles with their team and external teams alike, and ensure projects are completed on time, according to the specifications. Leaders who are effective problem-solvers also have the following skills:
+
+Critical thinking
+Analytical skills
+Research
+Decisiveness">
+      <img src="dependability.jpg" style="width:10%" onclick="onClick(this)" alt="Being a dependable leader means that people can trust and rely on you. A dependable person follows through on plans and keeps promises. The strong relationships built by a dependable leader create a resilient team that can work through difficulties that may arise. Being a dependable professional means meeting deadlines, being straightforward, coming through on obligations and when you can’t meet a promise or a goal, communicating this early on and having a backup plan. Dependable leaders also have the following skills:
+
+Realistic goal-setting
+Integrity
+Timeliness
+Initiative
+Detail-oriented
+Loyal
+Truthfulness">
+    </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+ 
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+</body>
+</html>
